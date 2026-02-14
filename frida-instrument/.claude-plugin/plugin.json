@@ -1,0 +1,8 @@
+{
+  "name": "frida-instrument",
+  "version": "1.0.0",
+  "description": "Instrument running binaries using Frida's dynamic analysis toolkit. Trace calls, hook APIs, inspect memory, enumerate modules, and perform instruction-level tracing.",
+  "author": {
+    "name": "sandbornm"
+  }
+}

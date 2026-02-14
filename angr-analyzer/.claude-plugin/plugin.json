@@ -1,0 +1,8 @@
+{
+  "name": "angr-analyzer",
+  "version": "1.0.0",
+  "description": "Analyze binaries using angr's Python framework. Decompile, recover control flow graphs, find vulnerabilities via symbolic execution, and extract symbols from stripped binaries.",
+  "author": {
+    "name": "sandbornm"
+  }
+}

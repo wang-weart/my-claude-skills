@@ -1,0 +1,22 @@
+{
+  "name": "my-claude-skills",
+  "owner": {
+    "name": "sandbornm"
+  },
+  "metadata": {
+    "description": "Binary analysis skills for Claude Code: angr (static) and Frida (dynamic)",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "angr-analyzer",
+      "source": "./angr-analyzer",
+      "description": "Static binary analysis with angr: decompilation, CFG recovery, symbolic execution, vulnerability detection"
+    },
+    {
+      "name": "frida-instrument",
+      "source": "./frida-instrument",
+      "description": "Dynamic binary instrumentation with Frida: function tracing, API hooking, memory inspection, Stalker tracing"
+    }
+  ]
+}
