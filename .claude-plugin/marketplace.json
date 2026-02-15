@@ -4,8 +4,8 @@
     "name": "sandbornm"
   },
   "metadata": {
-    "description": "Binary analysis skills for Claude Code: angr (static) and Frida (dynamic)",
-    "version": "1.0.0"
+    "description": "Security analysis skills for Claude Code: angr (static binary), Frida (dynamic binary), and pcap (network capture)",
+    "version": "1.1.0"
   },
   "plugins": [
     {
@@ -17,6 +17,11 @@
       "name": "frida-instrument",
       "source": "./frida-instrument",
       "description": "Dynamic binary instrumentation with Frida: function tracing, API hooking, memory inspection, Stalker tracing"
+    },
+    {
+      "name": "pcap-analyzer",
+      "source": "./pcap-analyzer",
+      "description": "Network capture analysis with scapy: stream extraction, DNS/HTTP parsing, credential detection, anomaly detection, file carving"
     }
   ]
 }

@@ -1,0 +1,8 @@
+{
+  "name": "pcap-analyzer",
+  "version": "1.0.0",
+  "description": "Analyze network captures (pcap/pcapng) for forensics and reverse engineering. Extract streams, DNS, HTTP, credentials, files, and detect anomalies like beaconing or C2 traffic.",
+  "author": {
+    "name": "sandbornm"
+  }
+}
