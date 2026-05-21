@@ -4,8 +4,8 @@
     "name": "sandbornm"
   },
   "metadata": {
-    "description": "Security analysis skills for Claude Code: angr (static binary), Frida (dynamic binary), and pcap (network capture)",
-    "version": "1.1.0"
+    "description": "Security analysis skills for Claude Code: angr (static binary), Frida (dynamic binary), pcap (network capture), and crash triage",
+    "version": "1.2.0"
   },
   "plugins": [
     {
@@ -22,6 +22,11 @@
       "name": "pcap-analyzer",
       "source": "./pcap-analyzer",
       "description": "Network capture analysis with scapy: stream extraction, DNS/HTTP parsing, credential detection, anomaly detection, file carving"
+    },
+    {
+      "name": "crash-triage",
+      "source": "./crash-triage",
+      "description": "Crash triage: reproduce a PoC under ASAN/UBSan or a debugger, classify the crash by bug class and exploitability, and emit a severity-ranked verdict with a recommended action"
     }
   ]
 }

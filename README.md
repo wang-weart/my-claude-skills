@@ -1,6 +1,6 @@
 # my-claude-skills
 
-Security analysis skills for Claude Code: static binary analysis (angr), dynamic binary instrumentation (Frida), and network capture analysis (pcap).
+Security analysis skills for Claude Code: static binary analysis (angr), dynamic binary instrumentation (Frida), network capture analysis (pcap), and crash triage.
 
 ## Install
 
@@ -21,6 +21,9 @@ claude plugin add sandbornm/my-claude-skills/frida-instrument
 
 # Network capture analysis (pcap)
 claude plugin add sandbornm/my-claude-skills/pcap-analyzer
+
+# Crash triage and classification
+claude plugin add sandbornm/my-claude-skills/crash-triage
 ```
 
 ## Plugins
@@ -42,3 +45,9 @@ Dynamic binary instrumentation using Frida. Trace function calls at runtime, hoo
 Network capture analysis for digital forensics and reverse engineering. Extract TCP/UDP streams, DNS queries, HTTP transactions, cleartext credentials, and transferred files. Detect C2 beaconing, port scanning, data exfiltration, and DNS tunneling.
 
 **Prerequisites:** Python 3.8+, `pip install scapy` (optional: install tshark via Wireshark for enhanced features)
+
+### crash-triage
+
+Triage and classify program crashes by bug class and exploitability. Reproduce a crashing input under ASAN/UBSan or a debugger, classify ASAN reports and GDB/LLDB backtraces (memory-bug, segv, ubsan, assertion, trap, leak, …), and emit a severity-ranked verdict with the responsible source frame and a recommended action. Useful for reviewing fuzzer-found crashes and deciding what to report upstream.
+
+**Prerequisites:** Python 3 (stdlib only). For reproduction: the target binary (ideally an ASAN+UBSan build); optionally `gdb` or `lldb` for a backtrace fallback.

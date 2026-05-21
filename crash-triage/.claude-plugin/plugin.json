@@ -1,0 +1,8 @@
+{
+  "name": "crash-triage",
+  "version": "1.0.0",
+  "description": "Triage and classify program crashes by bug class and exploitability. Reproduce a crashing input under ASAN/UBSan or a debugger, classify ASAN reports and GDB/LLDB backtraces, and emit a severity-ranked verdict with the responsible source frame and a recommended action.",
+  "author": {
+    "name": "sandbornm"
+  }
+}
